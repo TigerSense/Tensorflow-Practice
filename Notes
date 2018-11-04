@@ -10,3 +10,8 @@ pip install tensorflow==1.5.0
 2. Install matplotlib
 
 pip install matplotlib
+
+3. Error: UnicodeDecodeError: 'gbk' codec can't decode byte 0xa6 in position 1362: illegal multibyte sequence
+Fix: Add encoding parameter to ext = open(filename, 'r', encoding='utf-8').readlines()[1:] in method read_birth_life_data
+
+
