@@ -1,0 +1,13 @@
+import tensorflow as tf
+
+x = tf.constant(0, name = 'x')
+y = tf.constant(1, name = 'y')
+z = tf.add(x, y)
+
+with tf.Session() as sess:
+    writer = tf.summary.FileWriter('./graph',sess.graph)
+    print(sess.run(z))
+
+
+# after running, go to cmd and type in tensorboard -logdir = "./graph"
+# open browser and go to http://localhost-PC:6006
