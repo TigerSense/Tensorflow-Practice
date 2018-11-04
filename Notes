@@ -1,0 +1,5 @@
+Notes:
+
+1. Install Tensorflow of a particular version: pip install tensorflow==1.5.0 (It uninstall installed tensorflow and then installs the specified 
+
+version)
